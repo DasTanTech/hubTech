@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorBG"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.companyProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/default_event_pic"
+            android:scaleType="centerCrop"
+            android:id="@+id/companyProfileFrag_propic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/companyProfileFrag_name"/>
+
+        <TextView
+            android:id="@+id/companyProfileFrag_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/companyProfileFrag_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/companyProfileFrag_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="@drawable/btn_style"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingEnd="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_22sdp"
+        android:id="@+id/companyProfileFrag_logout_btn"/>
+
+</RelativeLayout>

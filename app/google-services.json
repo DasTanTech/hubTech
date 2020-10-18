@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "936373058940",
+    "firebase_url": "https://eventzz-4883c.firebaseio.com",
+    "project_id": "eventzz-4883c",
+    "storage_bucket": "eventzz-4883c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936373058940:android:143ccda7dd70d85583f8f9",
+        "android_client_info": {
+          "package_name": "com.uk.ac.tees.w9207652.eventzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936373058940-tmbbg234sbfu7lhg6plhemj852lcrba9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3SixXKQ8a2YCNIXFBRfCJbJRK2OZdeMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936373058940-tmbbg234sbfu7lhg6plhemj852lcrba9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

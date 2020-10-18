@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.registeredEvents">
+
+    <TextView
+        android:id="@+id/registeredEvents_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Hosted Events"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/registeredEvents_RCV"
+        android:fitsSystemWindows="true"/>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clientLogin"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:elevation="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:paddingTop="@dimen/_15sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:gravity="center"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_defaultNameCode="GB"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="phone"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:id="@+id/ciLogin_phone_et"/>
+        </LinearLayout>
+
+
+        <Button
+            android:background="@drawable/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get OTP"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/ciLogin_phoneAuth_btn"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="@dimen/_15sdp"/>
+
+
+        <Button
+            android:drawableStart="@drawable/ic_google"
+            android:background="@drawable/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Google Sign In"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/ciLogin_googleSignIn_btn"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:elevation="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Host A Event"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_margin="@dimen/_15sdp"/>
+
+        <TextView
+
+            android:background="@drawable/btn_style"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Login"
+            android:padding="@dimen/_12sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/ciLogin_coLogin_tv"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

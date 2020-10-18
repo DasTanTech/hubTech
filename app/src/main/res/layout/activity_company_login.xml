@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".companyLogin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company Login"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:elevation="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:paddingTop="@dimen/_15sdp">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/coLogin_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:singleLine="true"
+                android:inputType="phone"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/coLogin_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:hint="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:background="@drawable/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/coLogin_login_btn"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="@dimen/_15sdp"/>
+
+
+        <Button
+
+            android:background="@drawable/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/coLogin_register_btn"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

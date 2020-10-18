@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="@dimen/_5sdp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:src="@drawable/default_event_pic"
+            android:scaleType="centerCrop"
+            android:id="@+id/singleSlideLayout_image"/>
+
+        <TextView
+            android:id="@+id/singleSlideLayout_price_txt"
+            android:paddingStart="5dp"
+            android:layout_alignParentEnd="true"
+            android:background="#98ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_32sdp"
+            android:drawableStart="@drawable/ic_pound_symbol_variant"
+            android:text=" 2100"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+
+        <TextView
+            android:id="@+id/singleSlideLayout_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Event Name"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background = "#98ffffff"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slide_click_layout">
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

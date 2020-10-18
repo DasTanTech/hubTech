@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".companyAddEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        app:navigationIcon="@drawable/ic_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Host A Event"
+        app:titleTextColor="@color/colorWhite"
+        android:id="@+id/coAddEventDisplay_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/coAddEventDisplay_btnLayout"
+        android:layout_below="@id/coAddEventDisplay_toolbar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/coAddEventDisplay_eventName"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint="Event Name"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/coAddEventDisplay_eventSponsor"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint="Event Sponsor"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/coAddEventDisplay_eventPrice"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint="Event Price"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/coAddEventDisplay_eventDesc"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint="Event Description"
+                    android:maxLines="5"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/coAddEventDisplay_eventAddress"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint="Event Venue"
+                    android:maxLines="4"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click Here To Select Date"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:id="@+id/coAddEventDisplay_eventDate"/>
+
+
+            <ImageView
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/default_event_add_pic"
+                android:scaleType="centerCrop"
+                android:id="@+id/coAddEventDisplay_eventImageView"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/coAddEventDisplay_btnLayout"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/coAddEventDisplay_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style2"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Conform and Host"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="false"
+            android:elevation="@dimen/_20sdp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

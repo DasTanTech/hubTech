@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clientHome"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Hub Tech"
+        app:titleTextColor="@color/colorWhite"
+        android:id="@+id/home_toolbar"/>
+
+    <TextView
+        android:id="@+id/home_profileChange_btn"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentEnd="true"
+        android:text="CHANGE"
+        android:textColor="@color/colorWhite"
+        />
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_toolbar"
+        android:layout_above="@id/home_bottomNavView"
+        android:id="@+id/home_frameLayout"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/home_bottomNavView"
+        app:menu="@menu/home"
+        android:elevation="8dp"
+        app:labelVisibilityMode="unlabeled"
+        app:elevation="8dp"
+        app:itemBackground="?android:attr/windowBackground"
+        />
+
+</RelativeLayout>

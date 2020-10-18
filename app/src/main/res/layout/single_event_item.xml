@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:padding="@dimen/_5sdp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:clickable="false"
+                    android:id="@+id/singleEventItem_eventName"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_below="@id/evenbDisplay_eventDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:editable="false"
+                        android:clickable="false"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16sdp"
+                        android:hint="Event Name"
+                        android:text=""/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:clickable="false"
+                    android:id="@+id/singleEventItem_eventSponsor"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_below="@id/evenbDisplay_eventDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:editable="false"
+                        android:clickable="false"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_14sdp"
+                        android:hint="Sponsored by"
+                        android:text=""/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Date"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/singleEventItem_eventDate"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/singleEventItem_eventDay"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:enabled="false"
+            android:id="@+id/singleEventItem_eventAddress"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@id/evenbDisplay_eventDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:editable="false"
+                android:clickable="false"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:hint="Venue" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/click_Layout">
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
