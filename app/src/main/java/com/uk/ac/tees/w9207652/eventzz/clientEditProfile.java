@@ -195,7 +195,6 @@ public class clientEditProfile extends AppCompatActivity {
                     gPhone.getEditText().setText(String.valueOf(snapshot.child(CONST.DB_C_PHONE).getValue()));
                     PROPICURL = String.valueOf(snapshot.child(CONST.DB_C_PROPICURL).getValue());
                     Glide.with(clientEditProfile.this).load(String.valueOf(snapshot.child(CONST.DB_C_PROPICURL).getValue())).into(gProPic);
-
                 }
                 gDialog.dismiss();
             }

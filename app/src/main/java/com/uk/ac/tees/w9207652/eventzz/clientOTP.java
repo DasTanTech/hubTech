@@ -145,6 +145,7 @@ public class clientOTP extends AppCompatActivity {
                         if (task.isSuccessful())
                         {
                             CID = task.getResult().getUser().getUid();
+                            Toast.makeText(clientOTP.this, CID, Toast.LENGTH_SHORT).show();
                             promotUser(CID,FB_PHONE);
                         }
                         else
@@ -181,7 +182,7 @@ public class clientOTP extends AppCompatActivity {
         });
     }
 
-    private void createClientInstance(String cid, String fb_phone) {
+    private void createClientInstance(final String cid, String fb_phone) {
         dataMap.put(CONST.DB_C_PHONE,fb_phone);
 
 
@@ -190,6 +191,9 @@ public class clientOTP extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful())
                 {
+                    firebase.gUser = firebase.gAuth.getCurrentUser();
+                    firebase.CUR_USER = 0;
+                    firebase.CID = cid;
                     toEditClient();
                 }
                 else
